@@ -1,3 +1,42 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<button mat-button> My button </button>
-<p> text </p> 
+
+<mat-toolbar color="primary" class="example-toolbar">
+  <button mat-icon-button (click)="snav.toggle()">
+    <mat-icon>
+      <i class="fa fa-bars"></i>
+    </mat-icon>
+  </button>
+  <h1 class="example-app-name">Ankita</h1>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #snav [mode]="'side'">
+    <mat-nav-list>
+      <ul>
+        <li> 
+          <mat-icon>
+              <i class="fa fa-tachometer">Dashboard</i>
+              <!-- <a mat-list-item routerLink="#">Click me 1</a> -->
+          </mat-icon>  
+        </li>
+        <li>
+           
+        </li>
+        <li>
+          <!-- <a mat-list-item routerLink='#'>CLick me 3</a> -->
+        </li>
+        <li>
+          <!-- <a mat-list-item routerLink='#'>Click me</a> -->
+        </li>
+      </ul>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. A amet doloribus, voluptate, sunt nesciunt veritatis quisquam ipsum
+      cum ipsa accusamus fuga temporibus necessitatibus nihil, quis laborum quaerat distinctio eaque consequuntur. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Earum illo quis quod praesentium impedit ipsa ex deleniti ratione
+      asperiores quos, dolores ea in harum assumenda ducimus consequuntur placeat quibusdam doloribus.</p>
+  </mat-sidenav-content>
+</mat-sidenav-container>
