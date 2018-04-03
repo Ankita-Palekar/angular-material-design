@@ -10,25 +10,30 @@
 </mat-toolbar>
 
 <mat-sidenav-container>
-  <mat-sidenav #snav [mode]="'side'">
+  <mat-sidenav class="side-nav" #snav [mode]="'side'">
     <mat-nav-list>
-      <ul>
-        <li> 
-          <mat-icon>
-              <i class="fa fa-tachometer">Dashboard</i>
-              <!-- <a mat-list-item routerLink="#">Click me 1</a> -->
-          </mat-icon>  
-        </li>
-        <li>
-           
-        </li>
-        <li>
-          <!-- <a mat-list-item routerLink='#'>CLick me 3</a> -->
-        </li>
-        <li>
-          <!-- <a mat-list-item routerLink='#'>Click me</a> -->
-        </li>
-      </ul>
+      <mat-list>
+        <mat-list-item>
+          <i class="fa fa-tachometer">
+            <span>Dashboard</span>
+          </i>
+        </mat-list-item>
+        <mat-list-item>
+          <i class="fa fa-file">
+            <span>Form Page</span>
+          </i>
+        </mat-list-item>
+        <mat-list-item>
+          <i class="fa fa-table">
+            <span>Table Page</span>
+          </i>
+        </mat-list-item>
+        <mat-list-item>
+          <i class="fa fa-user-o">
+            <span>Login Page</span>
+          </i>
+        </mat-list-item>
+      </mat-list>
     </mat-nav-list>
   </mat-sidenav>
 
@@ -38,5 +43,11 @@
       cum ipsa accusamus fuga temporibus necessitatibus nihil, quis laborum quaerat distinctio eaque consequuntur. Lorem
       ipsum dolor sit amet consectetur adipisicing elit. Earum illo quis quod praesentium impedit ipsa ex deleniti ratione
       asperiores quos, dolores ea in harum assumenda ducimus consequuntur placeat quibusdam doloribus.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laudantium unde excepturi tempora aliquid. Libero neque exercitationem similique reiciendis esse nam debitis, eum at possimus quo blanditiis veritatis doloremque voluptate.
+        <br>
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vel est aliquam ipsam consequatur voluptate ratione doloribus quas quod eveniet asperiores, incidunt voluptatum temporibus quibusdam sapiente cumque porro earum ea?
+        <br>
+      </p>
   </mat-sidenav-content>
 </mat-sidenav-container>
